@@ -1,14 +1,14 @@
-import { Menu, X } from "lucide-react";
+import { Menu, Sun, X, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "../lib/utils";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSun } from "react-icons/fa";
 import { navItems } from "../lib/data";
-
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,6 +18,32 @@ export const Navbar = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+
+
+    const toggleTheme = () => {
+        if (isDarkMode) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+            setIsDarkMode(false);
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            setIsDarkMode(true);
+        }
+    };
+    
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme === "dark") {
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
+        } else {
+            localStorage.setItem("theme", "light");
+            setIsDarkMode(false);
+        }
+    }, []);
+
     return (
         <nav className={cn(
             "fixed w-full z-40 transition-all duration-300 bg-background/95", isScrolled ? "py-3 bg-background/80 shadow-xs" : "")}
@@ -30,18 +56,26 @@ export const Navbar = () => {
                 {/* desktop nav */}
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
-                        <>
-                            <a
-                                key={key}
-                                href={item.href}
-                                className="text-foreground/80 hover:text-primary transition-colors duration-300 font-bold active:color-red-500"
-                            >
-                                {item.name}
-                            </a>
-                        </>
+                        <a
+                            key={key}
+                            href={item.href}
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300 font-bold active:color-red-500"
+                        >
+                            {item.name}
+                        </a>
                     ))}
-                    <a href=""><FaLinkedin className="my-auto hover:text-primary" size={25} /></a>
-                    <a href=""><FaGithub className="my-auto mx-auto hover:text-primary" size={25} /></a>
+                    <a href="https://linkedin.com/in/mohitg593" target="_blank"><FaLinkedin className="my-auto hover:text-primary" size={25} /></a>
+                    <a href="https://github.com/mohitg593" target="_blank"><FaGithub className="my-auto mx-auto hover:text-primary" size={25} /></a>
+                    <button title="Switch Theme" className="cursor-pointer"
+                        onClick={toggleTheme}
+
+                    >
+                        {isDarkMode ? (
+                            <FaSun className="h-6 w-6 text-yellow-300" />
+                        ) : (
+                            <Moon className="h-6 w-6 text-blue-900" />
+                        )}
+                    </button>
                 </div>
 
                 {/* mobile nav */}
@@ -73,8 +107,18 @@ export const Navbar = () => {
                             </a>
                         ))}
                         <span className="flex gap-6 justify-center">
-                            <a href=""><FaLinkedin className="my-auto mx-auto hover:text-primary" size={25} /></a>
-                            <a href=""><FaGithub className="my-auto mx-auto cursor-pointer hover:text-primary" size={25} /></a>
+                            <a href="https://linkedin.com/in/mohitg593" target="_blank"><FaLinkedin className="my-auto mx-auto hover:text-primary" size={25} /></a>
+                            <a href="https://github.com/mohitg593" target="_blank"><FaGithub className="my-auto mx-auto cursor-pointer hover:text-primary" size={25} /></a>
+                            <button title="Switch Theme"
+                                onClick={toggleTheme}
+                                className="cursor-pointer"
+                            >
+                                {isDarkMode ? (
+                                    <FaSun className="h-6 w-6 text-yellow-300" />
+                                ) : (
+                                    <Moon className="h-6 w-6 text-blue-900" />
+                                )}
+                            </button>
                         </span>
                     </div>
                 </div>

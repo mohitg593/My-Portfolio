@@ -97,6 +97,18 @@
     --border: 217 33% 20%;
   }
 
+  .orange {
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 8%;
+
+    --primary: 225 65% 65%;
+    --primary-foreground: 213 31% 91%;
+
+    --border: 217 33% 20%;
+  }
+
   * {
     @apply border-border;
   }
@@ -154,6 +166,10 @@
 
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:scale-105 active:scale-95;
+}
+
+.send-btn {
+  @apply px-6 py-2 rounded-full bg-primary/50 text-primary-foreground font-medium
 }
 
 @utility star {
