@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa"
 import { projects } from "../lib/data"
-import { ExternalLink } from "lucide-react"
+import { ArrowRight, ExternalLink } from "lucide-react"
 
 export const ProjectsSection = () => {
     return (
@@ -33,8 +33,8 @@ export const ProjectsSection = () => {
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/30 text-secondary-foreground">
+                                    {project.tags.map((tag, key) => (
+                                        <span key = {key} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/30 text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}
@@ -64,6 +64,17 @@ export const ProjectsSection = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+            </div>
+            <div>
+                <div className="text-center mt-12">
+                    <a
+                        className="cosmic-button w-fit flex items-center mx-auto gap-2"
+                        target="_blank"
+                        href="https://github.com/mohitg593"
+                    >
+                        Check My Github <ArrowRight size={16} />
+                    </a>
                 </div>
             </div>
         </section>
