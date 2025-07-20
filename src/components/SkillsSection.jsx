@@ -33,7 +33,7 @@ export const SkillsSection = () => {
                     </div>
                     <div className="justify-center flex flex-wrap gap-4">
                         {filteredSkills.map((skill, key) => (
-                            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover hover:bg-primary/40 hover:text-white">
+                            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover hover:bg-primary/40 ">
                                 <div className="text-center ">
                                     <h3 className="font-semibold text-lg">{skill.name}</h3>
                                     <img src={skill.src} width={50} height={30} className="mx-auto my-auto"></img>
