@@ -3,7 +3,6 @@ import { ArrowUp } from "lucide-react"
 export const Footer = () => {
     return (
         <>
-
             <div>
                 <footer className="py-8 px-4 bg-card relative border-t border-border mt-12 flex flex-wrap justify-between items-center mx-auto">
                     <div className="text-center mx-auto">

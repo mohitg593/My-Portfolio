@@ -13,20 +13,20 @@ export const AboutSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
                             <h3 className="text-2xl font-semibold">
-                                Passionate Web Developer & Tech Creator
+                                Front End Developer | Ex-TCSer | Ex-Infoscion
                             </h3>
 
                             <p className="text-muted-foreground">
-                                With over 5 years of experience in web development, I specialize
-                                in creating responsive, accessible, and performant web
-                                applications using modern technologies.
+                                Front-End Developer with 3+ years of professional experience designing and building responsive 
+                                web applications using React, Redux, HTML, CSS, and JavaScript. Proven track record in delivering 
+                                high-quality UI with seamless API integration, leading small teams, and delivering 80+ production 
+                                screens across large-scale government portals. Passionate about clean, maintainable code, 
+                                responsive design, and modern React practices.
                             </p>
 
                             <p className="text-muted-foreground">
-                                I'm passionate about creating elegant solutions to complex
-                                problems, and I'm constantly learning new technologies and
-                                techniques to stay at the forefront of the ever-evolving web
-                                landscape.
+                                Strong communicator and collaborator with experience leading cross-functional teams and meeting 
+                                tight deadlines. Always eager to learn new technologies and deliver user-focused solutions.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

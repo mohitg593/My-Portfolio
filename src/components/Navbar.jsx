@@ -1,20 +1,20 @@
-import { Menu, Sun, X, Moon } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Menu, Sun, X, Moon, Droplet } from "lucide-react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "../lib/utils";
 import { FaGithub, FaLinkedin, FaSun } from "react-icons/fa";
 import { navItems } from "../lib/data";
+import { ThemeContext } from "../Contexts/ThemeContext";
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const {isDarkMode, setIsDarkMode} = useContext(ThemeContext)
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.screenY > 10);
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -32,7 +32,7 @@ export const Navbar = () => {
             setIsDarkMode(true);
         }
     };
-    
+
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
         if (storedTheme === "dark") {
@@ -73,9 +73,23 @@ export const Navbar = () => {
                         {isDarkMode ? (
                             <FaSun className="h-6 w-6 text-yellow-300" />
                         ) : (
+                            <Moon className="h-6 w-6 text-blue-900" fill="blue-900" />
+                        )}
+                    </button>
+
+
+                    {/* <button title="Change Theme Color" className="cursor-pointer"
+                        onClick={toggleTheme}
+
+                    >
+                        {isDarkMode ? (
+                            <Droplet className="h-6 w-6 text-yellow-300" fill="orange"/>
+                        ) : (
                             <Moon className="h-6 w-6 text-blue-900" />
                         )}
                     </button>
+                    */}
+
                 </div>
 
                 {/* mobile nav */}

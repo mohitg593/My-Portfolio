@@ -1,21 +1,47 @@
 import { Mail, Map, MapPin, Phone, Send, X } from "lucide-react"
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaInstagram, FaLinkedin, FaLocationArrow, FaTwitter } from "react-icons/fa"
 import { cn } from "../lib/utils";
 import { Form, FormLabel } from "react-bootstrap";
 import { toast } from "react-toastify";
-
+import emailjs from '@emailjs/browser';
 
 export const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [form, setForm] = useState({ name: "", email: "", message: "" })
     const [disabledSend, setDisabledSend] = useState(true)
     const Toast = toast
+    const formData = useRef();
+
     const handleSubmit = (e) => {
-        Toast.success("fakfjsk")
+
         setDisabledSend(true)
         setIsSubmitting(true)
         e.preventDefault()
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!pattern.test(form.email)) {
+            Toast.error("Please enter a valid email address")
+
+        }
+        else {
+            emailjs
+                .sendForm('service_3076qwh', 'template_zn29wyn', formData.current, {
+                    publicKey: 'Z7-CrgBbW3E1z28ZL',
+                })
+                .then(
+                    () => {
+                        Toast.success("Message sent successfully");
+                        formData.current.reset();
+                        setForm({ name: "", email: "", message: "" })
+                    },
+                    (error) => {
+                        console.error("Error sending message:", error);
+                        Toast.error(error.text + ": Failed to send message. Please try again.");
+                    },
+                );
+        }
+        setIsSubmitting(false)
+        setDisabledSend(false)
     }
 
     useEffect(() => {
@@ -50,7 +76,7 @@ export const ContactSection = () => {
 
     return (
         <>
-            <section id="contact" className="py-24 px-4 relative bg-secondary/30 min-h-screen">
+            <section id="contact" className="pt-24 px-4 relative bg-secondary/30 min-h-screen">
                 <div className="container mx-auto max-w-5xl">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                         Get In <span className="text-primary"> Touch</span>
@@ -116,10 +142,10 @@ export const ContactSection = () => {
                                     <a href="#" target="_blank">
                                         <img src="./public/images/linkedin.png" className="w-8 hover:scale-110" />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://twitter.com/mohitg593" target="_blank">
                                         <img src="./public/images/twitter.jpg" className="w-8 hover:scale-110" />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://instagram.com/__mohit_gupta__" target="_blank">
                                         <img src="./public/images/insta.png" className="w-8 hover:scale-110" />
                                     </a>
                                 </div>
@@ -132,7 +158,7 @@ export const ContactSection = () => {
                         >
                             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-                            <form className="space-y-6">
+                            <form ref={formData} className="space-y-6">
                                 <div>
                                     <label
                                         htmlFor="name"
