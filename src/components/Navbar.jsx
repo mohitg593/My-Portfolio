@@ -9,9 +9,18 @@ import { ThemeContext } from "../Contexts/ThemeContext";
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const {isDarkMode, setIsDarkMode} = useContext(ThemeContext)
+    const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
 
     useEffect(() => {
+        if (isDarkMode) {
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
+        }
+        else {
+
+            setIsDarkMode(false);
+        }
+        
         const handleScroll = () => {
             setIsScrolled(window.screenY > 10);
         };
@@ -24,25 +33,14 @@ export const Navbar = () => {
     const toggleTheme = () => {
         if (isDarkMode) {
             document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
+
             setIsDarkMode(false);
         } else {
             document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
+
             setIsDarkMode(true);
         }
     };
-
-    useEffect(() => {
-        const storedTheme = localStorage.getItem("theme");
-        if (storedTheme === "dark") {
-            setIsDarkMode(true);
-            document.documentElement.classList.add("dark");
-        } else {
-            localStorage.setItem("theme", "light");
-            setIsDarkMode(false);
-        }
-    }, []);
 
     return (
         <nav className={cn(
