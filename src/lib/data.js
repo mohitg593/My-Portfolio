@@ -15,6 +15,7 @@ export const skills = [
     { name: "Bootstrap", category: "frontend", src: "../public/images/bootstrap.png" },
     { name: "Tailwind CSS", level: 90, category: "frontend", src: "../public/images/tailwind.png" },
     { name: "Responsive Web Design", category: "frontend", src: "../public/images/rwd.png" },
+    { name: "Material UI", category: "frontend", src: "../public/images/mui.png" },
 
     /* // Backend
     { name: "Node.js", category: "backend", src: "../public/images/node.png" },
