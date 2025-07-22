@@ -19,7 +19,7 @@ export const HeroSection = () => {
                         </p>
 
                         <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-                            <a href="public/resume/Mohit_Gupta_Frontend_Resume_2025.pdf" download={"Resume"}>
+                            <a href="public/Mohit_Gupta_Frontend_Resume_2025.pdf" download={"Resume"}>
                                 <button className="cosmic-button hover:bg-[#712cf9] hover:shadow-2xl focus:outline-2 
                             focus:outline-offset-2 focus:outline-[#712cf9] cursor-pointer"
                                     onClick={()=>window.open('public/resume/Mohit_Gupta_Frontend_Resume_2025.pdf')}>

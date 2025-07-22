@@ -1,21 +1,21 @@
 export const skills = [
 
     //Programming Languages
-    { name: "Python", category: "programming languages", src: "../public/images/python.png" },
-    { name: "JavaScript", category: "programming languages", src: "../public/images/js.png" },
-    { name: "TypeScript", category: "programming languages", src: "../public/images/ts.png" },
-    { name: "Object Oriented Programming", category: "programming languages", src: "../public/images/code.jpg" },
+    { name: "Python", category: "programming languages", src: "../public/python.png" },
+    { name: "JavaScript", category: "programming languages", src: "../public/js.png" },
+    { name: "TypeScript", category: "programming languages", src: "../public/ts.png" },
+    { name: "Object Oriented Programming", category: "programming languages", src: "../public/code.jpg" },
 
     // Frontend
 
-    { name: "React", category: "frontend", src: "../public/images/react.png" },
-    { name: "Redux", category: "frontend", src: "../public/images/redux.png" },
-    { name: "HTML", category: "frontend", src: "../public/images/html.png" },
-    { name: "CSS", category: "frontend", src: "../public/images/css.png" },
-    { name: "Bootstrap", category: "frontend", src: "../public/images/bootstrap.png" },
-    { name: "Tailwind CSS", level: 90, category: "frontend", src: "../public/images/tailwind.png" },
-    { name: "Responsive Web Design", category: "frontend", src: "../public/images/rwd.png" },
-    { name: "Material UI", category: "frontend", src: "../public/images/mui.png" },
+    { name: "React", category: "frontend", src: "../public/react.png" },
+    { name: "Redux", category: "frontend", src: "../public/redux.png" },
+    { name: "HTML", category: "frontend", src: "../public/html.png" },
+    { name: "CSS", category: "frontend", src: "../public/css.png" },
+    { name: "Bootstrap", category: "frontend", src: "../public/bootstrap.png" },
+    { name: "Tailwind CSS", level: 90, category: "frontend", src: "../public/tailwind.png" },
+    { name: "Responsive Web Design", category: "frontend", src: "../public/rwd.png" },
+    { name: "Material UI", category: "frontend", src: "../public/mui.png" },
 
     /* // Backend
     { name: "Node.js", category: "backend", src: "../public/images/node.png" },
@@ -23,28 +23,28 @@ export const skills = [
     { name: "MongoDB", category: "backend", src: "../public/images/mongo.png" }, */
 
     //Version Control
-    { name: "Git", category: "version control", src: "../public/images/git.png" },
-    { name: "GitHub", category: "version control", src: "../public/images/github.png" },
-    { name: "Gitlab", category: "version control", src: "../public/images/gitlab.png" },
-    { name: "Bitbucket", category: "version control", src: "../public/images/bb.png" },
+    { name: "Git", category: "version control", src: "../public/git.png" },
+    { name: "GitHub", category: "version control", src: "../public/github.png" },
+    { name: "Gitlab", category: "version control", src: "../public/gitlab.png" },
+    { name: "Bitbucket", category: "version control", src: "../public/bb.png" },
 
     //API Communication
-    { name: "Postman", category: "api communication", src: "../public/images/postman.png" },
-    { name: "Fetch", category: "api communication", src: "../public/images/fetch.png" },
-    { name: "RESTful APIs", category: "api communication", src: "../public/images/rest.png" },
+    { name: "Postman", category: "api communication", src: "../public/postman.png" },
+    { name: "Fetch", category: "api communication", src: "../public/fetch.png" },
+    { name: "RESTful APIs", category: "api communication", src: "../public/rest.png" },
 
 
     // Tools
-    { name: "VS Code", category: "tools", src: "../public/images/vscode.png" },
-    { name: "Jupyter Notebook", category: "tools", src: "../public/images/jupyter.svg" },
+    { name: "VS Code", category: "tools", src: "../public/vscode.png" },
+    { name: "Jupyter Notebook", category: "tools", src: "../public/jupyter.svg" },
 
     // Soft Skills
-    { name: "Team Leadership", category: "soft skills", src: "../public/images/leader.png" },
-    { name: "Time Management", category: "soft skills", src: "../public/images/time.png" },
-    { name: "Effective Communication", category: "soft skills", src: "../public/images/comm.png" },
-    { name: "Agile (Kanban and Scrum)", category: "soft skills", src: "../public/images/agile.png" },
-    { name: "Continuous Learning", category: "soft skills", src: "../public/images/cont.png" },
-    { name: "Problem Solving", category: "soft skills", src: "../public/images/solving.png" },
+    { name: "Team Leadership", category: "soft skills", src: "../public/leader.png" },
+    { name: "Time Management", category: "soft skills", src: "../public/time.png" },
+    { name: "Effective Communication", category: "soft skills", src: "../public/comm.png" },
+    { name: "Agile (Kanban and Scrum)", category: "soft skills", src: "../public/agile.png" },
+    { name: "Continuous Learning", category: "soft skills", src: "../public/cont.png" },
+    { name: "Problem Solving", category: "soft skills", src: "../public/solving.png" },
 ];
 
 
@@ -67,7 +67,7 @@ export const projects = [
         id: 1,
         title: "Passport Sewa Project 2.0",
         description: "This is the Passport Portal of Government of India. The existing portal was completely revamped and built using modern technologies. This project aims to deliver seamless passport experience to citizens and enure faster and timely delivery of services.",
-        image: "./public/images/psp.png",
+        image: "./public/psp.png",
         tags: ["HTML", "CSS", "React"],
         demoUrl: "https://www.passportindia.gov.in/psp",
     },
@@ -75,7 +75,7 @@ export const projects = [
         id: 2,
         title: "MEADOWS - Ministry of External Affairs Digital Online Working System",
         description: "This project aims to digitise various procedures of the organisation. It is developed using React, HTML and CSS. It enables employee management through APAR filing, leave records management, procurement for various sections, etc.",
-        image: "./public/images/meadows.jpeg",
+        image: "./public/meadows.jpeg",
         tags: ["HTML", "CSS", "React"],
         demoUrl: "https://videshapps.gov.in/videsh/",
     },
@@ -85,7 +85,7 @@ export const projects = [
 export const education = [
     {
         id: 0,
-        img: "./public/images/sbs.png",
+        img: "./public/sbs.png",
         school: "Shaheed Bhagat Singh State Technical Campus, Ferozepur",
         date: "2018 - 2022",
         grade: "9.24 CGPA",
@@ -93,7 +93,7 @@ export const education = [
     },
     {
         id: 1,
-        img: "./public/images/bfps.png",
+        img: "./public/bfps.png",
         school: "Baba Farid Public School, Faridkot",
         date: "2016 - 2017",
         grade: "96.8%",
@@ -101,7 +101,7 @@ export const education = [
     },
     {
         id: 2,
-        img: "./public/images/bfps.png",
+        img: "./public/bfps.png",
         school: "Baba Farid Public School, Faridkot",
         date: "2014 - 2015",
         grade: "10 CGPA",
@@ -112,7 +112,7 @@ export const education = [
 export const experience = [
     {
         id: 0,
-        img: "./public/images/mea.png",
+        img: "./public/mea.png",
         role: "Frontend Developer",
         company: "Ministry of External Affairs",
         duration: "February, 2024 - Present",
@@ -124,7 +124,7 @@ export const experience = [
     },
     {
         id: 0,
-        img: "./public/images/tcs.png",
+        img: "./public/tcs.png",
         role: "Systems Engineer",
         company: "Tata Consultancy Services (TCS)",
         duration: "July, 2022 - November, 2023",
@@ -134,7 +134,7 @@ export const experience = [
     },
     {
         id: 2,
-        img: "./public/images/infosys.svg",
+        img: "./public/infosys.svg",
         role: "Systems Engineer Trainee",
         company: "Infosys",
         duration: "February, 2022 - May, 2022",
@@ -147,43 +147,43 @@ export const certifications = [
     {
         id: 0,
         name: "AZ900: Azure Fundamentals - Microsoft",
-        image: "./public/images/microsoft.jpg",
+        image: "./public/microsoft.jpg",
         url: "https://www.credly.com/badges/1c8859dc-4628-4493-8b48-55ed69a18306?source=linked_in_profile"
     },
     {
         id: 1,
         name: "CRUD Operations in MongoDB - MongoDB",
-        image: "./public/images/mongodb.jpg",
+        image: "./public/mongodb.jpg",
         url: "https://www.credly.com/badges/d6b0155c-9850-4953-8ec7-1fc99a9ab657/linked_in_profile"
     },
     {
         id: 2,
         name: "AWS Educate Introduction to Cloud 101- Amazon Web Services",
-        image: "./public/images/aws.jpg",
+        image: "./public/aws.jpg",
         url: "https://www.credly.com/badges/b8529bda-cd6e-4029-a36b-136b422f9068/linked_in_profile"
     },
     {
         id: 3,
         name: "Javascript (Basic) - Hackerrank",
-        image: "./public/images/hackerrank.jpg",
+        image: "./public/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/21a6cc340261"
     },
     {
         id: 4,
         name: "CSS (Basic) - Hackerrank",
-        image: "./public/images/hackerrank.jpg",
+        image: "./public/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/439e983c027c"
     },
     {
         id: 5,
         name: "Python (Basic) - Hackerrank",
-        image: "./public/images/hackerrank.jpg",
+        image: "./public/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/28e90ace3639"
     },
     {
         id: 6,
         name: "Problem Solving (Basic) - Hackerrank",
-        image: "./public/images/hackerrank.jpg",
+        image: "./public/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/589b99360e3b"
     },
 

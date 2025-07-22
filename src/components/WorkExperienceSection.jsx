@@ -10,7 +10,7 @@ export const WorkExperienceSection = () => {
                     <div className="grid grid-cols-1 gap-8">
                         <div className="flex flex-row items-center justify-center gap-8">
                             <div className="overflow-hidden">
-                                <img src="./public/images/mea.png" className="w-20 h-20" />
+                                <img src="./public/mea.png" className="w-20 h-20" />
                             </div>
                             <div className="h-fit py-8 group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full">
                                 <div className="overflow-hidden mx-10">
@@ -40,7 +40,7 @@ export const WorkExperienceSection = () => {
 
                         <div className="flex flex-row items-center justify-center gap-8">
                             <div className="overflow-hidden">
-                                <img src="./public/images/tcs.png" className="w-20 h-20" />
+                                <img src="./public/tcs.png" className="w-20 h-20" />
                             </div>
                             <div className="h-fit py-8 group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full">
                                 <div className="overflow-hidden mx-10">
@@ -71,7 +71,7 @@ export const WorkExperienceSection = () => {
 
                         <div className="flex flex-row items-center justify-center gap-8">
                             <div className="overflow-hidden">
-                                <img src="./public/images/infosys.svg" className="w-20 h-20" />
+                                <img src="./public/infosys.svg" className="w-20 h-20" />
                             </div>
                             <div className="h-fit py-8 group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full">
                                 <div className="overflow-hidden mx-10">
