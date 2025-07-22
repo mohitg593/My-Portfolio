@@ -140,13 +140,13 @@ export const ContactSection = () => {
                                 <h4 className="font-medium mb-4"> Connect With Me</h4>
                                 <div className="flex space-x-4 justify-center">
                                     <a href="#" target="_blank">
-                                        <img src="./public/images/linkedin.png" className="w-8 hover:scale-110" />
+                                        <img src="./public/linkedin.png" className="w-8 hover:scale-110" />
                                     </a>
                                     <a href="https://twitter.com/mohitg593" target="_blank">
-                                        <img src="./public/images/twitter.jpg" className="w-8 hover:scale-110" />
+                                        <img src="./public/twitter.jpg" className="w-8 hover:scale-110" />
                                     </a>
                                     <a href="https://instagram.com/__mohit_gupta__" target="_blank">
-                                        <img src="./public/images/insta.png" className="w-8 hover:scale-110" />
+                                        <img src="./public/insta.png" className="w-8 hover:scale-110" />
                                     </a>
                                 </div>
                             </div>
