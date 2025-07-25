@@ -29,7 +29,7 @@ export const skills = [
     { name: "Bitbucket", category: "version control", src: "/bb.png" },
 
     //API Communication
-    { name: "Postman", category: "api communication", src: "./public/postman.png" },
+    { name: "Postman", category: "api communication", src: "/postman.png" },
     { name: "Fetch", category: "api communication", src: "/fetch.png" },
     { name: "RESTful APIs", category: "api communication", src: "/rest.png" },
 
