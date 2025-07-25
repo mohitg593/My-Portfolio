@@ -1,50 +1,50 @@
 export const skills = [
 
     //Programming Languages
-    { name: "Python", category: "programming languages", src: "../public/python.png" },
-    { name: "JavaScript", category: "programming languages", src: "../public/js.png" },
-    { name: "TypeScript", category: "programming languages", src: "../public/ts.png" },
-    { name: "Object Oriented Programming", category: "programming languages", src: "../public/code.jpg" },
+    { name: "Python", category: "programming languages", src: "/python.png" },
+    { name: "JavaScript", category: "programming languages", src: "/js.png" },
+    { name: "TypeScript", category: "programming languages", src: "/ts.png" },
+    { name: "Object Oriented Programming", category: "programming languages", src: "/code.jpg" },
 
     // Frontend
 
-    { name: "React", category: "frontend", src: "../public/react.png" },
-    { name: "Redux", category: "frontend", src: "../public/redux.png" },
-    { name: "HTML", category: "frontend", src: "../public/html.png" },
-    { name: "CSS", category: "frontend", src: "../public/css.png" },
-    { name: "Bootstrap", category: "frontend", src: "../public/bootstrap.png" },
-    { name: "Tailwind CSS", level: 90, category: "frontend", src: "../public/tailwind.png" },
-    { name: "Responsive Web Design", category: "frontend", src: "../public/rwd.png" },
-    { name: "Material UI", category: "frontend", src: "../public/mui.png" },
+    { name: "React", category: "frontend", src: "/react.png" },
+    { name: "Redux", category: "frontend", src: "/redux.png" },
+    { name: "HTML", category: "frontend", src: "/html.png" },
+    { name: "CSS", category: "frontend", src: "/css.png" },
+    { name: "Bootstrap", category: "frontend", src: "/bootstrap.png" },
+    { name: "Tailwind CSS", level: 90, category: "frontend", src: "/tailwind.png" },
+    { name: "Responsive Web Design", category: "frontend", src: "/rwd.png" },
+    { name: "Material UI", category: "frontend", src: "/mui.png" },
 
     /* // Backend
-    { name: "Node.js", category: "backend", src: "../public/images/node.png" },
-    { name: "Express", category: "backend", src: "../public/images/express.png" },
-    { name: "MongoDB", category: "backend", src: "../public/images/mongo.png" }, */
+    { name: "Node.js", category: "backend", src: "/images/node.png" },
+    { name: "Express", category: "backend", src: "/images/express.png" },
+    { name: "MongoDB", category: "backend", src: "/images/mongo.png" }, */
 
     //Version Control
-    { name: "Git", category: "version control", src: "../public/git.png" },
-    { name: "GitHub", category: "version control", src: "../public/github.png" },
-    { name: "Gitlab", category: "version control", src: "../public/gitlab.png" },
-    { name: "Bitbucket", category: "version control", src: "../public/bb.png" },
+    { name: "Git", category: "version control", src: "/git.png" },
+    { name: "GitHub", category: "version control", src: "/github.png" },
+    { name: "Gitlab", category: "version control", src: "/gitlab.png" },
+    { name: "Bitbucket", category: "version control", src: "/bb.png" },
 
     //API Communication
-    { name: "Postman", category: "api communication", src: "../public/postman.png" },
-    { name: "Fetch", category: "api communication", src: "../public/fetch.png" },
-    { name: "RESTful APIs", category: "api communication", src: "../public/rest.png" },
+    { name: "Postman", category: "api communication", src: "/postman.png" },
+    { name: "Fetch", category: "api communication", src: "/fetch.png" },
+    { name: "RESTful APIs", category: "api communication", src: "/rest.png" },
 
 
     // Tools
-    { name: "VS Code", category: "tools", src: "../public/vscode.png" },
-    { name: "Jupyter Notebook", category: "tools", src: "../public/jupyter.svg" },
+    { name: "VS Code", category: "tools", src: "/vscode.png" },
+    { name: "Jupyter Notebook", category: "tools", src: "/jupyter.svg" },
 
     // Soft Skills
     { name: "Team Leadership", category: "soft skills", src: "./leader.png" },
-    { name: "Time Management", category: "soft skills", src: "../public/time.png" },
-    { name: "Effective Communication", category: "soft skills", src: "../public/comm.png" },
-    { name: "Agile (Kanban and Scrum)", category: "soft skills", src: "../public/agile.png" },
-    { name: "Continuous Learning", category: "soft skills", src: "../public/cont.png" },
-    { name: "Problem Solving", category: "soft skills", src: "../public/solving.png" },
+    { name: "Time Management", category: "soft skills", src: "/time.png" },
+    { name: "Effective Communication", category: "soft skills", src: "/comm.png" },
+    { name: "Agile (Kanban and Scrum)", category: "soft skills", src: "/agile.png" },
+    { name: "Continuous Learning", category: "soft skills", src: "/cont.png" },
+    { name: "Problem Solving", category: "soft skills", src: "/solving.png" },
 ];
 
 

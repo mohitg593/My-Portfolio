@@ -20,7 +20,7 @@ export const Navbar = () => {
 
             setIsDarkMode(false);
         }
-        
+
         const handleScroll = () => {
             setIsScrolled(window.screenY > 10);
         };
