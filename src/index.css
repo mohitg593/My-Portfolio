@@ -83,6 +83,7 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
+    scrollbar-width: thin;
   }
 
   .dark {
