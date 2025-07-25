@@ -39,7 +39,7 @@ export const skills = [
     { name: "Jupyter Notebook", category: "tools", src: "../public/jupyter.svg" },
 
     // Soft Skills
-    { name: "Team Leadership", category: "soft skills", src: "../public/leader.png" },
+    { name: "Team Leadership", category: "soft skills", src: "./leader.png" },
     { name: "Time Management", category: "soft skills", src: "../public/time.png" },
     { name: "Effective Communication", category: "soft skills", src: "../public/comm.png" },
     { name: "Agile (Kanban and Scrum)", category: "soft skills", src: "../public/agile.png" },
