@@ -67,7 +67,7 @@ export const projects = [
         id: 1,
         title: "Passport Sewa Project 2.0",
         description: "This is the Passport Portal of Government of India. The existing portal was completely revamped and built using modern technologies. This project aims to deliver seamless passport experience to citizens and enure faster and timely delivery of services.",
-        image: "./public/psp.png",
+        image: "/psp.png",
         tags: ["HTML", "CSS", "React"],
         demoUrl: "https://www.passportindia.gov.in/psp",
     },
@@ -75,7 +75,7 @@ export const projects = [
         id: 2,
         title: "MEADOWS - Ministry of External Affairs Digital Online Working System",
         description: "This project aims to digitise various procedures of the organisation. It is developed using React, HTML and CSS. It enables employee management through APAR filing, leave records management, procurement for various sections, etc.",
-        image: "./public/meadows.jpeg",
+        image: "/meadows.jpeg",
         tags: ["HTML", "CSS", "React"],
         demoUrl: "https://videshapps.gov.in/videsh/",
     },
@@ -85,7 +85,7 @@ export const projects = [
 export const education = [
     {
         id: 0,
-        img: "./public/sbs.png",
+        img: "/sbs.png",
         school: "Shaheed Bhagat Singh State Technical Campus, Ferozepur",
         date: "2018 - 2022",
         grade: "9.24 CGPA",
@@ -93,7 +93,7 @@ export const education = [
     },
     {
         id: 1,
-        img: "./public/bfps.png",
+        img: "/bfps.png",
         school: "Baba Farid Public School, Faridkot",
         date: "2016 - 2017",
         grade: "96.8%",
@@ -101,7 +101,7 @@ export const education = [
     },
     {
         id: 2,
-        img: "./public/bfps.png",
+        img: "/bfps.png",
         school: "Baba Farid Public School, Faridkot",
         date: "2014 - 2015",
         grade: "10 CGPA",
@@ -112,7 +112,7 @@ export const education = [
 export const experience = [
     {
         id: 0,
-        img: "./public/mea.png",
+        img: "/mea.png",
         role: "Frontend Developer",
         company: "Ministry of External Affairs",
         duration: "February, 2024 - Present",
@@ -124,7 +124,7 @@ export const experience = [
     },
     {
         id: 0,
-        img: "./public/tcs.png",
+        img: "/tcs.png",
         role: "Systems Engineer",
         company: "Tata Consultancy Services (TCS)",
         duration: "July, 2022 - November, 2023",
@@ -134,7 +134,7 @@ export const experience = [
     },
     {
         id: 2,
-        img: "./public/infosys.svg",
+        img: "/infosys.svg",
         role: "Systems Engineer Trainee",
         company: "Infosys",
         duration: "February, 2022 - May, 2022",
@@ -147,43 +147,43 @@ export const certifications = [
     {
         id: 0,
         name: "AZ900: Azure Fundamentals - Microsoft",
-        image: "./public/microsoft.jpg",
+        image: "/microsoft.jpg",
         url: "https://www.credly.com/badges/1c8859dc-4628-4493-8b48-55ed69a18306?source=linked_in_profile"
     },
     {
         id: 1,
         name: "CRUD Operations in MongoDB - MongoDB",
-        image: "./public/mongodb.jpg",
+        image: "/mongodb.jpg",
         url: "https://www.credly.com/badges/d6b0155c-9850-4953-8ec7-1fc99a9ab657/linked_in_profile"
     },
     {
         id: 2,
         name: "AWS Educate Introduction to Cloud 101- Amazon Web Services",
-        image: "./public/aws.jpg",
+        image: "/aws.jpg",
         url: "https://www.credly.com/badges/b8529bda-cd6e-4029-a36b-136b422f9068/linked_in_profile"
     },
     {
         id: 3,
         name: "Javascript (Basic) - Hackerrank",
-        image: "./public/hackerrank.jpg",
+        image: "/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/21a6cc340261"
     },
     {
         id: 4,
         name: "CSS (Basic) - Hackerrank",
-        image: "./public/hackerrank.jpg",
+        image: "/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/439e983c027c"
     },
     {
         id: 5,
         name: "Python (Basic) - Hackerrank",
-        image: "./public/hackerrank.jpg",
+        image: "/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/28e90ace3639"
     },
     {
         id: 6,
         name: "Problem Solving (Basic) - Hackerrank",
-        image: "./public/hackerrank.jpg",
+        image: "/hackerrank.jpg",
         url: "https://www.hackerrank.com/certificates/589b99360e3b"
     },
 
