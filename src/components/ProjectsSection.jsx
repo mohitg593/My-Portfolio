@@ -9,9 +9,13 @@ export const ProjectsSection = () => {
 
     const handleOpenModal = (project) => {
         setSelectedProject(project);
+        document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+        document.body.scroll = "no"; // ie only
     };
 
     const handleCloseModal = () => {
+        document.documentElement.style.overflow = 'auto';  // firefox, chrome
+        document.body.scroll = "yes"; // ie only
         setSelectedProject(null);
     };
     return (
@@ -41,7 +45,7 @@ export const ProjectsSection = () => {
 
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                                
+
                                 <div className="flex flex-wrap gap-2 mb-4 mt-8">
                                     {project.tags.map((tag, key) => (
                                         <span key={key} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/30 text-secondary-foreground">
@@ -92,7 +96,7 @@ export const ProjectsSection = () => {
 
             {/* Modal Container */}
             {selectedProject && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black">
                     <div className="rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative bg-card  border-black ">
                         <div className="flex justify-between items-center p-4 border-primary border-b-3">
                             <h3 className="lg:text-xl font-bold text-muted-foreground text-md">
