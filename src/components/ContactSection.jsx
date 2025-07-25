@@ -13,7 +13,7 @@ export const ContactSection = () => {
     const Toast = toast
     const formData = useRef();
 
-    const handleSubmit = (e) => {
+    async function handleSubmit(e) {
 
         setDisabledSend(true)
         setIsSubmitting(true)
@@ -21,13 +21,11 @@ export const ContactSection = () => {
         const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!pattern.test(form.email)) {
             Toast.error("Please enter a valid email address")
-
         }
         else {
-            emailjs
-                .sendForm('service_3076qwh', 'template_zn29wyn', formData.current, {
-                    publicKey: 'Z7-CrgBbW3E1z28ZL',
-                })
+            await emailjs.sendForm('service_3076qwh', 'template_zn29wyn', formData.current, {
+                publicKey: 'Z7-CrgBbW3E1z28ZL',
+            })
                 .then(
                     () => {
                         Toast.success("Message sent successfully");
@@ -54,24 +52,10 @@ export const ContactSection = () => {
     }, [form])
 
     const handleInputChange = (e) => {
-        if (e.target.name == "name") {
-            setForm({
-                ...form,
-                "name": e.target.value
-            })
-        }
-        if (e.target.name == "email") {
-            setForm({
-                ...form,
-                "email": e.target.value
-            })
-        }
-        if (e.target.name == "message") {
-            setForm({
-                ...form,
-                "message": e.target.value
-            })
-        }
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        })
     }
 
     return (
@@ -140,13 +124,13 @@ export const ContactSection = () => {
                                 <h4 className="font-medium mb-4"> Connect With Me</h4>
                                 <div className="flex space-x-4 justify-center">
                                     <a href="#" target="_blank">
-                                        <img src="./public/linkedin.png" className="w-8 hover:scale-110" />
+                                        <img src="/linkedin.png" className="w-8 hover:scale-110" />
                                     </a>
                                     <a href="https://twitter.com/mohitg593" target="_blank">
-                                        <img src="./public/twitter.jpg" className="w-8 hover:scale-110" />
+                                        <img src="/twitter.jpg" className="w-8 hover:scale-110" />
                                     </a>
                                     <a href="https://instagram.com/__mohit_gupta__" target="_blank">
-                                        <img src="./public/insta.png" className="w-8 hover:scale-110" />
+                                        <img src="/insta.png" className="w-8 hover:scale-110" />
                                     </a>
                                 </div>
                             </div>
