@@ -30,7 +30,7 @@ export const WorkExperienceSection = () => {
                                         Role Description:
                                         <p>1. Leading the frontend development of internal portals, ensuring responsive, scalable, and user-friendly interfaces using React.js, JavaScript (ES6+), HTML5, and CSS3.
                                             <br />2. Designed and implemented 50+ dynamic screens, maintaining UI consistency and improving user experience across departments.
-                                            <br />3. Integrated 100+ RESTful APIs with efficient state management using Redux and Context API, enabling seamless data interaction across modules.
+                                            <br />3. Integrated 100+ RESTful APIs using Axios along with efficient state management using Redux, enabling seamless data interaction across modules.
                                             <br />4. Assigned as Team Lead, managing task allocation, mentoring junior developers, and ensuring on-time delivery of high-priority projects.
                                         </p>
                                     </div>
@@ -63,6 +63,7 @@ export const WorkExperienceSection = () => {
                                             <br />3. Integrated 50+ RESTful APIs with the frontend to enable dynamic, data-driven functionality across the application.
                                             <br />4. Led a team of 5 developers to build a key module from scratch, meeting tight deadlines while demonstrating strong team leadership and time management skills.
                                             <br />5. Collaborated closely with backend, QA, and product teams in an Agile environment to align development with business objectives.
+                                            <br />6. Performance optimization of 15% achieved using best practices
                                         </p>
                                     </div>
                                 </div>
@@ -89,7 +90,8 @@ export const WorkExperienceSection = () => {
                                     </div>
                                     <div className="text-muted-foreground text-left pt-4">
                                         Role Description:
-                                        <p>1. Developed a book exchange web application with 10+ screens using React JS
+                                        <p>
+                                            1. Developed a book exchange web application with 10+ screens using React JS
                                             <br/>2. Worked as team lead for the project
                                             <br/>3. Undertook requirements gathering and building use cases for the project
                                             <br/>4. Used Git for version control and code repository among team members

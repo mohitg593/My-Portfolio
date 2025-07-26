@@ -18,14 +18,17 @@ export const AboutSection = () => {
 
                             <p className="text-muted-foreground">
                                 Front-End Developer with 3+ years of professional experience designing and building responsive 
-                                web applications using React, Redux, HTML, CSS, and JavaScript. Proven track record in delivering 
-                                high-quality UI with seamless API integration, leading small teams, and delivering 80+ production 
-                                screens across large-scale government portals. Passionate about clean, maintainable code, 
-                                responsive design, and modern React practices.
+                                web applications using React, Redux, HTML, CSS, and JavaScript. Proven track record in 
+                                delivering high-quality UI with seamless API integration, and delivering 100+ production 
+                                screens across multiple government and enterprise grade projects. Passionate about clean, 
+                                maintainable code, responsive design, and modern React practices. Strong communicator and 
+                                collaborator with proven leadership skills, collaborating with cross-functional teams and 
+                                meeting tight deadlines. Always eager to learn new technologies and deliver user-focused 
+                                solutions.
                             </p>
 
                             <p className="text-muted-foreground">
-                                Strong communicator and collaborator with experience leading cross-functional teams and meeting 
+                                Strong communicator and collaborator with experience leading cross-functional teams and meeting
                                 tight deadlines. Always eager to learn new technologies and deliver user-focused solutions.
                             </p>
 
@@ -36,8 +39,10 @@ export const AboutSection = () => {
                                 </a>
 
                                 <a
-                                    href=""
+                                    href="/resume.pdf"
+                                    target="_blank"
                                     className="cosmic-button"
+                                    download={"Resume"}
                                 >
                                     Download Resume{"  "}<Download className="inline"></Download>
                                 </a>
